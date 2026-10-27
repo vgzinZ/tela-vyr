@@ -1,0 +1,7 @@
+# Blueprint do Render: sobe o site como um container Docker no plano gratuito.
+services:
+  - type: web
+    name: tela-vyr
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
